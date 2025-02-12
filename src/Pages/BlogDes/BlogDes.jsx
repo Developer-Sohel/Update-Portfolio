@@ -8,6 +8,7 @@ const BlogDes = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const blogRef = useRef(null);
+    const observerRef = useRef(null); // Keep a reference to the observer
 
     useEffect(() => {
         const fetchBlog = async () => {
@@ -37,23 +38,28 @@ const BlogDes = () => {
 
     useEffect(() => {
         if (blogRef.current) {
-            const observer = new IntersectionObserver(
-                ([entry]) => {
-                    if (entry.isIntersecting) {
-                        blogRef.current.classList.add('animate__animated', 'animate__fadeIn'); 
-                        observer.unobserve(blogRef.current);
-                    }
-                },
-                { threshold: 0.2 } 
-            );
+            // Create a new observer only if one doesn't already exist
+            if (!observerRef.current) {
+                observerRef.current = new IntersectionObserver(
+                    ([entry]) => {
+                        if (entry.isIntersecting) {
+                            blogRef.current.classList.add('animate__animated', 'animate__fadeIn');
+                            observerRef.current.unobserve(blogRef.current); // Use the ref to unobserve
+                        }
+                    },
+                    { threshold: 0.2 }
+                );
+            }
 
-            observer.observe(blogRef.current);
+            observerRef.current.observe(blogRef.current); // Observe the current ref
 
             return () => {
-                observer.unobserve(blogRef.current); 
+                if (observerRef.current) {
+                  observerRef.current.unobserve(blogRef.current);
+                }
             };
         }
-    }, [blog]); 
+    }, [blog]);
 
     if (loading) {
         return <div className="container mx-auto lg:px-24 py-16 text-center">Loading blog...</div>;
@@ -76,7 +82,7 @@ const BlogDes = () => {
     }
 
     return (
-        <div className="container mx-auto lg:px-24 py-20 px-4" ref={blogRef}> 
+        <div className="container mx-auto lg:px-24 py-20 px-4" ref={blogRef}>
             <img
                 src={blog.cover_img}
                 alt={blog.title}
