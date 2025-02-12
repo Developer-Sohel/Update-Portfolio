@@ -27,7 +27,7 @@ const Education = () => {
       dates: '2024-Present',
       description: 'I have completed a comprehensive MERN stack web development program with Programming Hero.  This intensive training has equipped me with the skills to build full-stack web applications using MongoDB, Express.js, React, and Node.js.  I am now eager to apply my newly acquired expertise to real-world projects and contribute to innovative development teams.',
     },
-    // Add more education entries as needed
+    
   ];
 
   return (
