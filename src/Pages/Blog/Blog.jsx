@@ -28,10 +28,9 @@ const Blog = () => {
         fetchBlogs();
     }, []);
 
-    const handleReadMore = (blogId) => {
-        navigate(`/des/${blogId}`); // Use navigate to go to the details page
+    const handleReadMore = (blog) => {
+        navigate(`/des/${blog.id}`, { state: { blog } }); // Pass the blog data via state
     };
-
 
     if (loading) {
         return <div className="container mx-auto lg:px-24 py-16 text-center">Loading blogs...</div>;
@@ -51,8 +50,7 @@ const Blog = () => {
                         <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
                         <p className="">{blog.description.slice(0, 150)}...</p>
 
-                        {/* Use a button or div with onClick instead of NavLink */}
-                        <button onClick={() => handleReadMore(blog.id)} className="text-blue-500 hover:underline mt-4 inline-block">
+                        <button onClick={() => handleReadMore(blog)} className="text-blue-500 hover:underline mt-4 inline-block">
                             Read More
                         </button>
                     </div>

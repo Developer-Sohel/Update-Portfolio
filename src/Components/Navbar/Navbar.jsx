@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className='bg-gray-800 fixed top-0 left-0 right-0 z-50'> {/* Added fixed, top-0, left-0, right-0, and z-50 */}
       <nav className=" p-4 container mx-auto lg:px-24">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-white font-bold text-xl">SOHEL <span>KHAN</span></div>
+          <div className="text-orange-500 font-bold text-2xl">SOHEL <span className='text-white'>KHAN</span></div>
           <div className="hidden md:flex justify-center items-center flex-grow gap-6">
             {navItems.map((item) => (
               <NavLink

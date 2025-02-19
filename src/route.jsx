@@ -46,7 +46,7 @@ export const router = createBrowserRouter([
         },
 
       {
-        path: "/des/:id",
+        path: "/des/:blogId",
         element: <BlogDes/>,
         
       },
