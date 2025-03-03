@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="text-center md:text-left">
                         <h3 className="text-xl font-semibold mb-4">About Me</h3>
                         <p className="text-gray-400">
-                            I'm a passionate developer who loves building amazing web applications and solving complex problems.
+                        I am a skilled digital marketer specializing in Google Ads, Facebook Ads, and SEO. Dedicated to driving traffic, increasing conversions, and achieving measurable results for businesses.
                         </p>
                     </div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
 
                 {/* Copyright Section */}
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} Developer Sohel. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Mamun mia. All rights reserved.</p>
                 </div>
             </div>
         </footer>

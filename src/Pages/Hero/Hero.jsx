@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
-import sohel from '../../assets/images/sohel.png';
+import mamun from '../../assets/images/mamun.jpg';
 import TypeAnimated from '../../Components/TypeAnimated/TypeAnimated';
 import { GrResume } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import 'animate.css'; 
 
 const Hero = () => {
-    const googleDriveLink = 'https://drive.google.com/file/d/1b7t2hqocbHJNJvQItsQmFhxNfRHgGYh3/view?usp=sharing';
-    const linkedin = 'https://bd.linkedin.com/in/md-sohel-rana-web-developer';
+    const googleDriveLink = '';
+    const linkedin = '';
 
     const imageRef = useRef(null);
     const titleRef = useRef(null);
@@ -81,20 +81,17 @@ const Hero = () => {
             <div className="container mx-auto lg:px-24">
                 <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
                     <div className="mb-8" ref={imageRef}>
-                        <img src={sohel} className="bg-amber-700 rounded-full w-80 h-80" alt="Sohel Khan" />
+                        <img src={mamun} className="shadow-2xl shadow-red-400 rounded-full w-80 h-80" alt="Sohel Khan" />
                     </div>
                     <div className="space-y-2" ref={titleRef}>
                         <h1 className="text-4xl font-bold tracking-widest leading-6">
-                            IT'S ME <span className="text-orange-500">SOHEL</span>
+                            IT'S ME <span className="text-orange-500">MAMUN</span>
                         </h1>
 
                         <TypeAnimated />
 
                         <p className="text-[15px] font-medium tracking-wide leading-relaxed" ref={descriptionRef}>
-                            Skilled MERN-stack developer and adept front-end specialist passionate
-                            about crafting seamless user experiences. Dedicated to continuous
-                            learning and leveraging the latest technologies for cutting-edge web
-                            applications.
+                        Experienced digital marketer skilled in Google Ads, Facebook Ads, and SEO. Proficient in creating and optimizing paid campaigns to drive traffic and conversions. Adept at improving organic search rankings through strategic keyword research and on-page/off-page optimization.
                         </p>
 
                         <div className="flex justify-center gap-4 mt-4">

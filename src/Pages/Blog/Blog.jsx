@@ -35,7 +35,7 @@ const Blog = () => {
     if (loading) {
         return <div className="container mx-auto lg:px-24 py-16 text-center">Loading blogs...</div>;
     }
-
+ 
     if (error) {
         return <div className="container mx-auto lg:px-24 py-16 text-center text-red-500">Error: {error.message}</div>;
     }

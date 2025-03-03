@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import {  FaServer,  FaDatabase,FaReact, FaNodeJs, FaHtml5, FaCss3,FaFigma    } from 'react-icons/fa';
-import { IoLogoJavascript } from "react-icons/io";
-import { RiTailwindCssFill, RiNextjsFill  } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-import { MdError } from "react-icons/md";
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+
 
 
 
@@ -11,18 +11,14 @@ import { MdError } from "react-icons/md";
 
 const Skills = () => {
   const skillsData = [
-    { name: 'MongoDB', level: 70, icon: <FaDatabase className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'Express.js', level: 70, icon: <FaServer className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'React', level: 80, icon: <FaReact  className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'Node.js', level: 70, icon: <FaNodeJs  className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'Next.Js', level: 60, icon: <RiNextjsFill   className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'TypeScript', level: 60, icon: <SiTypescript   className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'JavaScript', level: 80, icon: <IoLogoJavascript className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'Problem Solving', level: 80, icon: <MdError className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'Tailwind CSS', level: 95, icon: <RiTailwindCssFill className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'HTML', level: 95, icon: <FaHtml5  className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'CSS', level: 95, icon: <FaCss3  className="h-5 w-5 text-gray-600 mr-2" /> },
-    { name: 'Fifma', level: 65, icon: <FaFigma   className="h-5 w-5 text-gray-600 mr-2" /> },
+    { name: 'Google Adds', level: 70, icon: <FcGoogle className="h-5 w-5 text-gray-600 mr-2" /> },
+    { name: 'Facebook Adds', level: 70, icon: <FaFacebook className="h-5 w-5 text-gray-600 mr-2" /> },
+    { name: 'YouTube SEO', level: 80, icon: <FaYoutube  className="h-5 w-5 text-gray-600 mr-2" /> },
+    { name: 'YouTube Promotion', level: 70, icon: <FaYoutube  className="h-5 w-5 text-gray-600 mr-2" /> },
+    { name: 'YouTube Monetization', level: 60, icon: <FaYoutube   className="h-5 w-5 text-gray-600 mr-2" /> },
+    { name: 'YouTube Monthly Management', level: 60, icon: <FaYoutube   className="h-5 w-5 text-gray-600 mr-2" /> },
+
+    
   ];
 
   const [skillLevels, setSkillLevels] = useState({});

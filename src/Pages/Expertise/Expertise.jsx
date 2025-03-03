@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
+import bannar1 from '../../assets/images/bannar1.jpg'
+import bannar2 from '../../assets/images/bannar2.jpg'
+import bannar3 from '../../assets/images/bannar3.jpg'
+import bannar4 from '../../assets/images/bannar4.jpg'
+import bannar5 from '../../assets/images/bannar5.jpg'
+
+
 import 'animate.css'; 
 
 const Expertise = () => {
@@ -59,35 +63,47 @@ const Expertise = () => {
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 px-3'>
-                {/* front-end */}
-                <div className='expertices px-5 py-5 space-y-2 shadow-md rounded-sm flex flex-col justify-center items-center text-center border-t-1 border-b-1' ref={reactRef}>
-                    <FaReact className="text-4xl shadow-2xl text-blue-600 " />
-                    <h1 className="text-2xl font-bold tracking-wider">ReactJs Front-End Developar</h1>
-                    <p className="text-[15px] tracking-wide leading-6">
-                        A skilled React.js Front-End Developer proficient in building dynamic and responsive user interfaces. Experienced with modern JavaScript, HTML, CSS, and related front-end technologies. Focused on delivering clean, efficient, and maintainable code for optimal performance.
+               {/* serves-1 */}
+                
+                <div className='md:w-96 shadow-md rounded-md'>
+                    <img src={bannar1} alt="" />
+                    <p className='p-2'>Boost your YouTube video's visibility with targeted promotion strategies to increase views, engagement, and subscribers effectively.</p>
+                </div>
+
+               {/* serves-2 */}
+                
+                <div className='md:w-96 shadow-md rounded-md'>
+                    <img src={bannar2} alt="" />
+                    <p className='p-2'>Optimize YouTube SEO with keywords, engaging titles, descriptions, tags, and thumbnails to boost visibility, rankings, and organic traffic.</p>
+                </div>
+
+               {/* serves-3 */}
+                
+                <div className='md:w-96 shadow-md rounded-md'>
+                    <img src={bannar3} alt="" />
+                    <p className='p-2'>Create effective Facebook ads with targeted audiences, compelling visuals, and clear calls-to-action to drive engagement, conversions, and brand awareness.</p>
+                </div>
+
+               {/* serves-4 */}
+                
+                <div className='md:w-96 shadow-md rounded-md'>
+                    <img src={bannar4} alt="" />
+                    <p className='p-2'>
+                    Earn revenue on YouTube through ads, memberships, Super Chat, and merchandise by meeting monetization requirements and creating engaging, advertiser-friendly content.
+                    </p>
+                </div>
+               {/* serves-5 */}
+                
+                <div className='md:w-96 shadow-md rounded-md'>
+                    <img src={bannar5} alt="" />
+                    <p className='p-2'>
+                    Maximize reach and conversions with Google Ads by targeting specific keywords, audiences, and locations for cost-effective, measurable, and impactful advertising campaigns.
                     </p>
                 </div>
 
-                {/* node js Back-end developar */}
-                <div className='expertices px-5 py-5 space-y-2 shadow-md flex flex-col justify-center items-center text-center border-t-1 border-b-1' ref={nodeRef}>
-                    <FaNodeJs className="text-4xl shadow-2xl " /> 
-                    <h1 className="text-2xl font-bold tracking-wider">Node Js Back-end Developar</h1>
-                    <p className="text-[15px] tracking-wide leading-6">
-                        Node.js Backend Developer
-                        A skilled Node.js Back-end Developer experienced in building robust and scalable server-side applications. Proficient in JavaScript, Node.js frameworks (e.g., Express), and database technologies. Focused on delivering clean, efficient, and well-documented code for optimal performance.
-                    </p>
-                </div>
+          
 
-                {/* Mongodb database developar */}
-                <div className='expertices px-5 py-5 space-y-2 shadow-md flex flex-col justify-center items-center text-center border-t-1 border-b-1' ref={mongoRef}>
-                    <DiMongodb className="text-4xl shadow-2xl bg-green-500  text-white rounded-full w-9 p-2 h-9" /> 
-                    <h1 className="text-2xl font-bold tracking-wider">
-                        MongoDB Database Expert
-                    </h1>
-                    <p className="text-[15px] tracking-wide leading-6">
-                        A skilled MongoDB Database Expert proficient in designing, implementing, and managing MongoDB deployments. Experienced with data modeling, query optimization, and performance tuning for NoSQL databases. Focused on ensuring data integrity, availability, and security within MongoDB environments.
-                    </p>
-                </div>
+                
             </div>
         </div>
     );

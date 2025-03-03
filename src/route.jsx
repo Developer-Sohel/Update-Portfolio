@@ -3,11 +3,11 @@ import MainLayouts from "./MainLayouts/MainLayouts";
 import Home from "./Pages/Home/Home";
 import Expertise from "./Pages/Expertise/Expertise";
 import { About } from "./Pages/About/About";
-import Project from "./Pages/Project/Project";
 import Error from "./Components/Error/Error";
 import Blog from "./Pages/Blog/Blog";
 import BlogDes from "./Pages/BlogDes/BlogDes";
 import Contact from "./Pages/Contact/Contact";
+import Project from "./Pages/Project/project";
 
 
 export const router = createBrowserRouter([
@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             element:<About/>
         },
         {
-            path:'/project',
+            path:'/portfolio',
             element:<Project/>
         },
         {

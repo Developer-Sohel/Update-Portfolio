@@ -6,13 +6,13 @@ const TypeAnimated = () => {
      <TypeAnimation
     sequence={[
       // Same substring at the start will only be typed out once, initially
-      'I am :  React Developar🔥',
+      'I am : Digital Marketer🔥',
       1000, // wait 1s before replacing "Mice" with "Hamsters"
-      'I am : Front-End Developar🔥',
+      'I am : Google Adds Expert🔥',
       1000,
-      'I am : Mern-Stack Developar🔥',
+      'I am : Facebook Adds Expert🔥',
       1000,
-      'I am : learning Python and ML🔥',
+      'I am : SEO Expert🔥',
       1000
     ]}
     wrapper="span"
